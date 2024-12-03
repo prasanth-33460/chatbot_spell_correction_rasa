@@ -1,0 +1,229 @@
+version: "3.1"
+
+intents:
+  - greet
+  - heart_function
+  - goodbye
+  - affirm
+  - deny
+  - fallback
+  - heart_disease_symptoms
+  - coronary_artery_disease
+  - ecg_test
+  - blood_pressure
+  - heart_attack
+  - heart_attack_symptoms
+  - heart_attack_action
+  - heart_disease_prevention
+  - heart_disease_treatment
+  - cholesterol_impact
+  - heart_health_foods
+  - exercise_for_heart_health
+  - smoking_impact
+  - arrhythmia
+  - heart_failure
+  - cardiomyopathy
+  - echocardiogram
+  - stress_test
+  - ask_definition
+  - ask_purpose
+  - ask_symptoms
+  - ask_treatment
+  - ask_prevention
+  - ask_impact
+  - diagnostic_tests
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you with your heart health questions today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Take care!"
+    - text: "Bye! Have a great day!"
+
+  utter_fallback:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+
+  utter_heart_function:
+    - text: "The heart is a muscular organ that pumps blood throughout the body, supplying oxygen and nutrients while removing carbon dioxide and other wastes."
+
+  utter_heart_disease_symptoms:
+    - text: "Common symptoms of heart disease include chest pain, shortness of breath, fatigue, irregular heartbeat, and swelling in the legs or abdomen."
+
+  utter_coronary_artery_disease:
+    - text: "Coronary artery disease (CAD) occurs when the coronary arteries become narrowed or blocked, reducing blood flow to the heart muscle."
+
+  utter_ecg_test:
+    - text: "An ECG (electrocardiogram) is a test that records the electrical activity of the heart to identify any irregularities, such as arrhythmias or heart attacks."
+
+  utter_blood_pressure:
+    - text: "Blood pressure is the force of blood pushing against the walls of the arteries as the heart pumps blood."
+
+  utter_heart_attack:
+    - text: "A heart attack occurs when blood flow to a part of the heart is blocked, causing damage to the heart muscle."
+
+  utter_heart_attack_symptoms:
+    - text: "Symptoms of a heart attack include chest pain, shortness of breath, nausea, lightheadedness, and pain in the arms, back, neck, or jaw."
+
+  utter_heart_attack_action:
+    - text: "If you suspect a heart attack, call emergency services immediately, chew an aspirin if advised by a doctor, and try to stay calm and seated."
+
+  utter_heart_disease_prevention:
+    - text: "Heart disease can be prevented by maintaining a healthy diet, exercising regularly, avoiding smoking, and managing stress."
+
+  utter_heart_disease_treatment:
+    - text: "Treatments for heart disease include medications, lifestyle changes, and in some cases, surgical procedures like angioplasty or bypass surgery."
+
+  utter_cholesterol_impact:
+    - text: "Cholesterol impacts heart health by contributing to the buildup of plaque in the arteries, which can lead to atherosclerosis, increasing the risk of heart disease and stroke."
+
+  utter_heart_health_foods:
+    - text: "Heart-healthy foods include fruits, vegetables, whole grains, lean proteins, and foods rich in omega-3 fatty acids, such as fish. Reducing salt, sugar, and unhealthy fats is also important."
+
+  utter_exercise_for_heart_health:
+    - text: "Regular physical activity, such as walking, running, swimming, or cycling, helps improve heart health by strengthening the heart muscle, improving circulation, and lowering blood pressure."
+
+  utter_smoking_impact:
+    - text: "Smoking damages the blood vessels, raises blood pressure, reduces oxygen in the blood, and increases the risk of heart disease and stroke."
+
+  utter_arrhythmia:
+    - text: "Arrhythmia is an abnormal heart rhythm. It can cause the heart to beat too fast, too slow, or irregularly, which can affect the heart's ability to pump blood effectively."
+
+  utter_heart_failure:
+    - text: "Heart failure occurs when the heart is unable to pump blood efficiently to meet the body's needs, leading to symptoms like fatigue, shortness of breath, and fluid retention."
+
+  utter_cardiomyopathy:
+    - text: "Cardiomyopathy refers to diseases of the heart muscle, which can weaken the heart and lead to heart failure. Causes include genetics, high blood pressure, and heart attacks."
+
+  utter_echocardiogram:
+    - text: "An echocardiogram is an ultrasound of the heart that provides images of the heart's structure and function, helping doctors diagnose conditions like heart valve problems or heart failure."
+
+  utter_stress_test:
+    - text: "A stress test involves exercising on a treadmill or stationary bike while heart rate and other vital signs are monitored. It helps evaluate how well the heart performs under physical stress."
+
+  utter_ask_definition:
+    - text: "Can you clarify what you would like the definition of? I can explain terms like heart disease, arrhythmia, or others related to heart health."
+
+  utter_ask_purpose:
+    - text: "What would you like to know about the purpose? Are you asking about the purpose of a test, treatment, or something else?"
+
+  utter_ask_symptoms:
+    - text: "Are you asking about the symptoms of a specific heart condition, such as heart disease or a heart attack?"
+
+  utter_ask_treatment:
+    - text: "What heart condition or issue would you like to know the treatment options for?"
+
+  utter_ask_prevention:
+    - text: "Are you looking for information on how to prevent heart disease or specific heart conditions?"
+
+  utter_ask_impact:
+    - text: "Would you like to know how a specific lifestyle choice or condition impacts your heart health?"
+
+  utter_diagnostic_tests:
+    - text: "Diagnostic tests for heart health include ECG, echocardiogram, stress test, and blood tests to check cholesterol, blood sugar, and other risk factors."
+
+actions:
+  - utter_greet
+  - utter_heart_function
+  - utter_heart_disease_symptoms
+  - utter_coronary_artery_disease
+  - utter_ecg_test
+  - utter_blood_pressure
+  - utter_heart_attack
+  - utter_heart_attack_symptoms
+  - utter_heart_attack_action
+  - utter_heart_disease_prevention
+  - utter_heart_disease_treatment
+  - utter_cholesterol_impact
+  - utter_heart_health_foods
+  - utter_exercise_for_heart_health
+  - utter_smoking_impact
+  - utter_arrhythmia
+  - utter_heart_failure
+  - utter_cardiomyopathy
+  - utter_echocardiogram
+  - utter_stress_test
+  - utter_diagnostic_tests
+  - action_correct_spelling
+
+slots:
+  heart_function:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_function_entity
+  heart_disease_symptoms:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_disease_symptoms_entity
+  coronary_artery_disease:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: coronary_artery_disease_entity
+  ecg_test:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ecg_test_entity
+  blood_pressure:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: blood_pressure_entity
+  heart_attack:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_attack_entity
+  heart_attack_symptoms:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_attack_symptoms_entity
+  heart_attack_action:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_attack_action_entity
+  heart_disease_prevention:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_disease_prevention_entity
+  heart_disease_treatment:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_disease_treatment_entity
+  cholesterol_impact:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: cholesterol_impact_entity
+  heart_health_foods:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_health_foods_entity
+  exercise_for_heart_health:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: exercise_for_heart_health_entity
+  smoking_impact:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: smoking_impact_entity
+  arrhythmia:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: arrhythmia_entity
+  heart_failure:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: heart_failure_entity

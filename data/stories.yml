@@ -1,0 +1,127 @@
+version: "3.1"
+stories:
+  - story: Greet the user
+    steps:
+      - action: action_correct_spelling
+      - intent: greet
+      - action: utter_greet
+
+  - story: Goodbye path
+    steps:
+      - action: action_correct_spelling
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Heart function query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_function
+      - action: utter_heart_function
+
+  - story: Heart disease symptoms query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_disease_symptoms
+      - action: utter_heart_disease_symptoms
+
+  - story: Coronary artery disease query
+    steps:
+      - action: action_correct_spelling
+      - intent: coronary_artery_disease
+      - action: utter_coronary_artery_disease
+
+  - story: ECG test query
+    steps:
+      - action: action_correct_spelling
+      - intent: ecg_test
+      - action: utter_ecg_test
+
+  - story: Blood pressure query
+    steps:
+      - action: action_correct_spelling
+      - intent: blood_pressure
+      - action: utter_blood_pressure
+
+  - story: Heart attack query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_attack
+      - action: utter_heart_attack
+
+  - story: Heart attack symptoms query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_attack_symptoms
+      - action: utter_heart_attack_symptoms
+
+  - story: Heart attack action query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_attack_action
+      - action: utter_heart_attack_action
+
+  - story: Heart disease prevention query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_disease_prevention
+      - action: utter_heart_disease_prevention
+
+  - story: Heart disease treatment query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_disease_treatment
+      - action: utter_heart_disease_treatment
+
+  - story: Cholesterol impact query
+    steps:
+      - action: action_correct_spelling
+      - intent: cholesterol_impact
+      - action: utter_cholesterol_impact
+
+  - story: Heart health foods query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_health_foods
+      - action: utter_heart_health_foods
+
+  - story: Exercise for heart health query
+    steps:
+      - action: action_correct_spelling
+      - intent: exercise_for_heart_health
+      - action: utter_exercise_for_heart_health
+
+  - story: Smoking impact on heart health query
+    steps:
+      - action: action_correct_spelling
+      - intent: smoking_impact
+      - action: utter_smoking_impact
+
+  - story: Arrhythmia query
+    steps:
+      - action: action_correct_spelling
+      - intent: arrhythmia
+      - action: utter_arrhythmia
+
+  - story: Heart failure query
+    steps:
+      - action: action_correct_spelling
+      - intent: heart_failure
+      - action: utter_heart_failure
+
+  - story: Cardiomyopathy query
+    steps:
+      - action: action_correct_spelling
+      - intent: cardiomyopathy
+      - action: utter_cardiomyopathy
+
+  - story: Echocardiogram query
+    steps:
+      - action: action_correct_spelling
+      - intent: echocardiogram
+      - action: utter_echocardiogram
+
+  - story: Stress test query
+    steps:
+      - action: action_correct_spelling
+      - intent: stress_test
+      - action: utter_stress_test

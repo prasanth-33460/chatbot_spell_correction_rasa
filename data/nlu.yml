@@ -1,0 +1,281 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - Hello
+      - Hi
+      - Hey there
+      - Good morning
+      - Hi, how are you?
+      - Hello, chatbot
+      - wassup
+      - whats up?
+
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - talk to you soon
+      - bye-bye
+      - take care
+
+  - intent: heart_function
+    examples: |
+      - What is the function of the heart?
+      - Can you tell me what the heart does?
+      - What is the role of the heart in the body?
+      - How does the heart function?
+      - What does the heart do?
+      - How does my hert function?  # Misspelling of heart
+      - What is the funtion of the heart?  # Misspelling of function
+      - What is the functn of the hrt?  # Misspellings of function and heart
+
+  - intent: heart_disease_symptoms
+    examples: |
+      - What are the symptoms of heart disease?
+      - What are common symptoms of heart disease?
+      - How can I tell if I have heart disease?
+      - What should I look out for in terms of heart disease?
+      - What are the signs of heart disease?
+      - What are the symptoms of hert disease?  # Misspelling of heart
+      - How can I tell if I have hart disease?  # Misspelling of heart
+      - What are signs of heart diease?  # Misspelling of disease
+      - What are symptoms of hert diease?  # Misspelling of heart and disease
+
+  - intent: coronary_artery_disease
+    examples: |
+      - What is coronary artery disease?
+      - What is CAD?
+      - Can you explain coronary artery disease?
+      - What happens in coronary artery disease?
+      - What is blocked coronary artery disease?
+      - What is coronary artiry disease?  # Misspelling of artery
+      - What is coronary artary disease?  # Misspelling of artery
+      - What is coronary artary disese?  # Misspelling of artery and disease
+
+  - intent: ecg_test
+    examples: |
+      - What is an ECG?
+      - Can you explain an ECG?
+      - What does an ECG do?
+      - How is an ECG performed?
+      - What does an electrocardiogram show?
+
+  - intent: blood_pressure
+    examples: |
+      - What is blood pressure?
+      - Can you explain blood pressure?
+      - How does blood pressure work?
+      - What are normal blood pressure levels?
+      - What does blood pressure mean?
+      - What is blod pressure?  # Misspelling of blood
+      - What is bloood pressure?  # Misspelling of blood
+      - What is blood presssure?  # Misspelling of pressure
+      - What is bloop pressure?  # Misspelling of blood pressure
+
+  - intent: heart_attack
+    examples: |
+      - What is a heart attack?
+      - Can you explain a heart attack?
+      - What happens during a heart attack?
+      - How does a heart attack occur?
+      - What causes a heart attack?
+      - What happens during a hart attack?  # Misspelling of heart
+      - What is a hart attack?  # Misspelling of heart
+
+  - intent: heart_attack_symptoms
+    examples: |
+      - What are the symptoms of a heart attack?
+      - How do I know if I’m having a heart attack?
+      - What should I feel during a heart attack?
+      - What are the warning signs of a heart attack?
+      - How do heart attack symptoms manifest?
+      - What are the signs of a hrt attack?  # Misspelling of heart
+      - What should I feel during a hart attack?  # Misspelling of heart
+
+  - intent: heart_attack_action
+    examples: |
+      - What should I do if I suspect a heart attack?
+      - What action should I take if I think I'm having a heart attack?
+      - How do I react to a possible heart attack?
+      - Should I chew aspirin if I suspect a heart attack?
+      - What steps should I take in case of a heart attack?
+      - What should I do if I suspect a hart attack?  # Misspelling of heart
+      - Should I chew asprin if I suspect a heart attack?  # Misspelling of aspirin
+
+  - intent: heart_disease_prevention
+    examples: |
+      - How can heart disease be prevented?
+      - What are ways to prevent heart disease?
+      - How do I avoid heart disease?
+      - What steps should I take to prevent heart disease?
+      - What are the best prevention methods for heart disease?
+      - What are ways to prevent hrt disease?  # Misspelling of heart
+      - How do I avoid hrt disease?  # Misspelling of heart
+
+  - intent: heart_disease_treatment
+    examples: |
+      - What are common treatments for heart disease?
+      - How is heart disease treated?
+      - What is the treatment for heart disease?
+      - How can heart disease be managed?
+      - What treatments exist for heart disease?
+      - What treatments exist for hrt disease?  # Misspelling of heart
+      - How is hert disease treated?  # Misspelling of heart
+
+  - intent: cholesterol_impact
+    examples: |
+      - How does cholesterol affect the heart?
+      - What is the role of cholesterol in heart disease?
+      - Can high cholesterol lead to heart disease?
+      - How does cholesterol impact heart health?
+      - What can be done to control cholesterol for heart health?
+      - How does cholestrol affect the heart?  # Misspelling of cholesterol
+      - What is the role of cholestrol in heart disease?  # Misspelling of cholesterol
+      - Can high cholestrol lead to heart disease?  # Misspelling of cholesterol
+      - How does cholestrol impact heart health?  # Misspelling of cholesterol
+
+  - intent: heart_health_foods
+    examples: |
+      - What foods are good for heart health?
+      - Can diet improve heart health?
+      - What should I eat for a healthy heart?
+      - What are the best foods for preventing heart disease?
+      - Can I reverse heart disease through diet?
+      - What foods are good for hart health?  # Misspelling of heart
+      - Can diet improve hrt health?  # Misspelling of heart
+      - What are the best foods for preventing hert disease?  # Misspelling of heart
+
+  - intent: exercise_for_heart_health
+    examples: |
+      - How does exercise help the heart?
+      - What kind of exercise is best for heart health?
+      - How much exercise should I do to maintain a healthy heart?
+      - Is cardio good for heart health?
+      - Can exercise prevent heart disease?
+      - How does exrcise help the heart?  # Misspelling of exercise
+      - What kind of excersize is best for heart health?  # Misspelling of exercise
+      - Can exercise prvent heart disease?  # Misspelling of prevent
+
+  - intent: smoking_impact
+    examples: |
+      - How does smoking affect the heart?
+      - Can smoking cause heart disease?
+      - What are the risks of smoking for heart health?
+      - Is smoking related to heart attacks?
+      - How does smoking increase the risk of cardiovascular problems?
+      - How does smking affect the heart?  # Misspelling of smoking
+      - Can smking cause heart disease?  # Misspelling of smoking
+      - What are the rsiks of smoking for heart health?  # Misspelling of risks
+
+  - intent: arrhythmia
+    examples: |
+      - What is arrhythmia?
+      - Can you explain arrhythmia?
+      - What causes arrhythmia?
+      - How is arrhythmia treated?
+      - What are the symptoms of arrhythmia?
+      - What is arrthymia?  # Misspelling of arrhythmia
+      - What are the symtoms of arrhythmia?  # Misspelling of symptoms
+
+  - intent: heart_failure
+    examples: |
+      - What is heart failure?
+      - Can you explain heart failure?
+      - What causes heart failure?
+      - How is heart failure treated?
+      - What are the symptoms of heart failure?
+      - What is heart failuer?  # Misspelling of failure
+      - How is hert failure treated?  # Misspelling of heart
+
+  - intent: cardiomyopathy
+    examples: |
+      - What is cardiomyopathy?
+      - Can you explain cardiomyopathy?
+      - What are the types of cardiomyopathy?
+      - How is cardiomyopathy treated?
+      - What causes cardiomyopathy?
+      - What is cardimyopathy?  # Misspelling of cardiomyopathy
+      - How is cardimyopathy treated?  # Misspelling of cardiomyopathy
+
+  - intent: echocardiogram
+    examples: |
+      - What is an echocardiogram?
+      - How is an echocardiogram performed?
+      - What does an echocardiogram show?
+      - Why is an echocardiogram done?
+      - Can an echocardiogram diagnose heart disease?
+      - What is an echocadiogram?  # Misspelling of echocardiogram
+      - How is an echocardiogram preformed?  # Misspelling of performed
+
+  - intent: stress_test
+    examples: |
+      - What is a stress test?
+      - Why would I need a stress test?
+      - How is a stress test performed?
+      - What does a stress test show?
+      - How does a stress test help in diagnosing heart disease?
+      - What is a stess test?  # Misspelling of stress
+      - How is a stress test preformed?  # Misspelling of performed
+
+  - intent: ask_definition
+    examples: |
+      - What does [term] mean?
+      - Can you define [term]?
+      - What is the definition of [term]?
+      - How would you describe [term]?
+      - Can you explain what [term] means?
+
+  - intent: ask_purpose
+    examples: |
+      - What is the purpose of [test/procedure]?
+      - Why should I undergo [test/procedure]?
+      - What is the purpose of this treatment?
+      - Why do I need to take this medication?
+      - How will this procedure help me?
+
+  - intent: ask_symptoms
+    examples: |
+      - What are the symptoms of [disease]?
+      - How do I know if I have [disease]?
+      - What should I look for in terms of symptoms of [disease]?
+      - What are the signs of [disease]?
+      - How do [disease] symptoms manifest?
+
+  - intent: ask_treatment
+    examples: |
+      - How is [condition] treated?
+      - What treatments are available for [condition]?
+      - What options do I have for treating [condition]?
+      - Is there a cure for [condition]?
+      - Can [condition] be managed with medication?
+
+  - intent: ask_prevention
+    examples: |
+      - How can I prevent [condition]?
+      - What steps can I take to avoid [condition]?
+      - What are the prevention methods for [condition]?
+      - How can I lower my risk of [condition]?
+      - What can I do to prevent [condition]?
+
+  - intent: ask_impact
+    examples: |
+      - How does [factor] affect heart health?
+      - What is the impact of [factor] on heart disease?
+      - How does [condition] affect the heart?
+      - Can [factor] increase my risk of heart disease?
+      - What impact does [lifestyle factor] have on the heart?
+
+  - intent: diagnostic_tests
+    examples: |
+      - What diagnostic tests are available for heart disease?
+      - What tests can help diagnose heart disease?
+      - How is heart disease diagnosed?
+      - Are there any tests to check heart health?
+      - What diagnostic procedures are used to detect heart disease?
+      - What diagnostic tets are available for heart disease?  # Misspelling of tests
+      - What tests can help diagose heart disease?  # Misspelling of diagnose
+      - How is heart disese diagnosed?  # Misspelling of disease
+      - Are there any test to check heart helath?  # Misspellings of tests and health
+      - What diagnosic procedures are used to detect heart disease?  # Misspelling of diagnostic
