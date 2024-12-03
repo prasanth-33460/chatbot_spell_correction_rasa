@@ -20,6 +20,31 @@ nlu:
       - bye-bye
       - take care
 
+  - intent: affirm
+    examples: |
+      - Yes
+      - Sure
+      - Absolutely
+      - Of course
+      - That's correct
+      - Go ahead
+
+  - intent: deny
+    examples: |
+      - No
+      - No thanks
+      - I don't think so
+      - Not at all
+      - Definitely not
+
+  - intent: fallback
+    examples: |
+      - I don't understand
+      - Can you explain that again?
+      - I'm not sure what you mean
+      - Could you clarify?
+      - I didn't get that
+
   - intent: heart_function
     examples: |
       - What is the function of the heart?

@@ -121,10 +121,17 @@ responses:
 
   utter_diagnostic_tests:
     - text: "Diagnostic tests for heart health include ECG, echocardiogram, stress test, and blood tests to check cholesterol, blood sugar, and other risk factors."
-
+  
+  utter_affirmation:
+    - text: "Great! How can I assist you further?"
+  
+  utter_denial:
+    - text: "Okay, let me know if you need anything."
+    
 actions:
   - utter_greet
   - utter_heart_function
+  - utter_goodbye
   - utter_heart_disease_symptoms
   - utter_coronary_artery_disease
   - utter_ecg_test
@@ -143,85 +150,140 @@ actions:
   - utter_cardiomyopathy
   - utter_echocardiogram
   - utter_stress_test
+  - utter_ask_treatment
+  - utter_ask_prevention
+  - utter_ask_impact
   - utter_diagnostic_tests
-  - action_correct_spelling
+  - utter_ask_symptoms
+  - utter_ask_purpose
+  - utter_ask_definition
+  - action_understand_spelling
+
+entities:
+  - user_input
+  - heart_function
+  - heart_disease_symptoms
+  - coronary_artery_disease
+  - ecg_test
+  - blood_pressure
+  - heart_attack
+  - heart_attack_symptoms
+  - heart_attack_action
+  - heart_disease_prevention
+  - heart_disease_treatment
+  - cholesterol_impact
+  - heart_health_foods
+  - exercise_for_heart_health
+  - smoking_impact
+  - arrhythmia
+  - heart_failure
+  - cardiomyopathy
+  - echocardiogram
+  - stress_test
+  - ask_definition
+  - ask_purpose
+  - ask_symptoms
+  - ask_treatment
+  - ask_prevention
+  - ask_impact
+  - diagnostic_tests
 
 slots:
+  user_input:
+    type: text
+    mappings:
+    - type: from_text
+
   heart_function:
     type: text
     mappings:
-      - type: from_entity
-        entity: heart_function_entity
+    - type: from_entity
+      entity: heart_function_entity
+  
   heart_disease_symptoms:
     type: text
     mappings:
       - type: from_entity
         entity: heart_disease_symptoms_entity
+  
   coronary_artery_disease:
     type: text
     mappings:
       - type: from_entity
         entity: coronary_artery_disease_entity
+  
   ecg_test:
     type: text
     mappings:
       - type: from_entity
         entity: ecg_test_entity
+  
   blood_pressure:
     type: text
     mappings:
       - type: from_entity
         entity: blood_pressure_entity
+  
   heart_attack:
     type: text
     mappings:
       - type: from_entity
         entity: heart_attack_entity
+  
   heart_attack_symptoms:
     type: text
     mappings:
       - type: from_entity
         entity: heart_attack_symptoms_entity
+  
   heart_attack_action:
     type: text
     mappings:
       - type: from_entity
         entity: heart_attack_action_entity
+  
   heart_disease_prevention:
     type: text
     mappings:
       - type: from_entity
         entity: heart_disease_prevention_entity
+  
   heart_disease_treatment:
     type: text
     mappings:
       - type: from_entity
         entity: heart_disease_treatment_entity
+  
   cholesterol_impact:
     type: text
     mappings:
       - type: from_entity
         entity: cholesterol_impact_entity
+  
   heart_health_foods:
     type: text
     mappings:
       - type: from_entity
         entity: heart_health_foods_entity
+  
   exercise_for_heart_health:
     type: text
     mappings:
       - type: from_entity
         entity: exercise_for_heart_health_entity
+  
   smoking_impact:
     type: text
     mappings:
       - type: from_entity
         entity: smoking_impact_entity
+  
   arrhythmia:
     type: text
     mappings:
       - type: from_entity
         entity: arrhythmia_entity
+  
   heart_failure:
     type: text
     mappings:

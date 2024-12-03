@@ -1,132 +1,164 @@
 version: "3.1"
+
 rules:
   - rule: Respond to greeting
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: greet
       - action: utter_greet
 
   - rule: Respond to heart function query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_function
       - action: utter_heart_function
 
   - rule: Respond to heart disease symptoms query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_disease_symptoms
       - action: utter_heart_disease_symptoms
 
   - rule: Respond to coronary artery disease query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: coronary_artery_disease
       - action: utter_coronary_artery_disease
 
   - rule: Respond to ECG test query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: ecg_test
       - action: utter_ecg_test
 
   - rule: Respond to blood pressure query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: blood_pressure
       - action: utter_blood_pressure
 
   - rule: Respond to heart attack query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_attack
       - action: utter_heart_attack
 
   - rule: Respond to heart attack symptoms query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_attack_symptoms
       - action: utter_heart_attack_symptoms
 
   - rule: Respond to heart attack action query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_attack_action
       - action: utter_heart_attack_action
 
   - rule: Respond to heart disease prevention query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_disease_prevention
       - action: utter_heart_disease_prevention
 
   - rule: Respond to heart disease treatment query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_disease_treatment
       - action: utter_heart_disease_treatment
 
   - rule: Respond to cholesterol impact query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: cholesterol_impact
       - action: utter_cholesterol_impact
 
   - rule: Respond to heart health foods query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_health_foods
       - action: utter_heart_health_foods
 
   - rule: Respond to exercise for heart health query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: exercise_for_heart_health
       - action: utter_exercise_for_heart_health
 
   - rule: Respond to smoking impact query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: smoking_impact
       - action: utter_smoking_impact
 
   - rule: Respond to arrhythmia query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: arrhythmia
       - action: utter_arrhythmia
 
   - rule: Respond to heart failure query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: heart_failure
       - action: utter_heart_failure
 
   - rule: Respond to cardiomyopathy query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: cardiomyopathy
       - action: utter_cardiomyopathy
 
   - rule: Respond to echocardiogram query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: echocardiogram
       - action: utter_echocardiogram
 
   - rule: Respond to stress test query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: stress_test
       - action: utter_stress_test
 
+  - rule: Respond to ask definition query
+    steps:
+      - action: action_understand_spelling
+      - intent: ask_definition
+      - action: utter_ask_definition
+
+  - rule: Respond to ask purpose query
+    steps:
+      - action: action_understand_spelling
+      - intent: ask_purpose
+      - action: utter_ask_purpose
+
+  - rule: Respond to ask symptoms query
+    steps:
+      - action: action_understand_spelling
+      - intent: ask_symptoms
+      - action: utter_ask_symptoms
+
+  - rule: Respond to ask treatment query
+    steps:
+      - action: action_understand_spelling
+      - intent: ask_treatment
+      - action: utter_ask_treatment
+
+  - rule: Respond to ask prevention query
+    steps:
+      - action: action_understand_spelling
+      - intent: ask_prevention
+      - action: utter_ask_prevention
+
+  - rule: Respond to ask impact query
+    steps:
+      - action: action_understand_spelling
+      - intent: ask_impact
+      - action: utter_ask_impact
+
   - rule: Respond to diagnostic tests query
     steps:
-      - action: action_correct_spelling
+      - action: action_understand_spelling
       - intent: diagnostic_tests
       - action: utter_diagnostic_tests
-
-  - rule: Fallback rule
-    steps:
-      - intent: fallback
-      - action: utter_fallback
