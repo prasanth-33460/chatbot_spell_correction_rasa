@@ -25,6 +25,12 @@ rules:
       - intent: coronary_artery_disease
       - action: utter_coronary_artery_disease
 
+  - rule: Respond to repeated questions
+    steps:
+      - action: action_understand_spelling
+      - intent: repeat_advice
+      - action: utter_repeat_advice
+
   - rule: Respond to ECG test query
     steps:
       - action: action_understand_spelling
@@ -168,3 +174,10 @@ rules:
       - action: action_understand_spelling
       - intent: diagnostic_tests
       - action: utter_diagnostic_tests
+
+  - rule: Respond to pain-related queries
+    steps:
+      - action: action_understand_spelling
+      - intent: pain_level
+      - action: utter_pain_level
+

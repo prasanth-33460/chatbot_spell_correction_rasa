@@ -33,8 +33,21 @@ intents:
   - ask_impact
   - diagnostic_tests
   - how_are_you
+  - pain_level
+  - repeat_advice
+  - ask_what_to_do
 
 responses:
+  utter_pain_level:
+    - text: "I'm sorry to hear you're experiencing pain. For any kind of pain, I recommend seeking medical attention, especially if it's severe. Please consult a healthcare professional immediately."
+    - text: "It sounds like you're in pain. Please reach out to a medical professional if the pain persists or if it's severe."
+    - text: "Pain can be a sign of something serious. Please seek medical help or call emergency services if the pain is intense or continues."
+
+  utter_follow_up_action:
+    - text: "If you're still feeling chest pain, please contact a medical professional or go to the emergency room. Don’t ignore any symptoms of heart-related issues."
+    - text: "It sounds like you're experiencing chest pain. Please seek medical attention immediately, especially if the pain is severe."
+
+
   utter_greet:
     - text: "Hello! How can I assist you with your heart health questions today?"
 
@@ -131,6 +144,12 @@ responses:
   
   utter_denial:
     - text: "Okay, let me know if you need anything."
+  
+  utter_default:
+    - text: "Could you please describe your symptoms in more detail?"
+
+  utter_repeat_advice:
+    - text: "I understand your concern. If you're experiencing persistent or severe pain, please contact a medical professional immediately."
     
 actions:
   - utter_greet
@@ -163,6 +182,9 @@ actions:
   - utter_ask_definition
   - action_understand_spelling
   - utter_how_are_you
+  - utter_repeat_advice
+  - utter_pain_level
+  - action_track_chest_pain
 
 entities:
   - user_input
@@ -180,7 +202,6 @@ entities:
   - heart_health_foods
   - exercise_for_heart_health
   - smoking_impact
-  - arrhythmia
   - heart_failure
   - cardiomyopathy
   - echocardiogram
@@ -189,12 +210,40 @@ entities:
   - ask_purpose
   - ask_symptoms
   - ask_treatment
-  - ask_prevention
-  - ask_impact
   - how_are_you
+  - ask_impact
+  - ask_prevention
+  - pain_level
+  - pain_level_entity
+  - repeat_advice
+  - arrhythmia
+  - heart_function_entity
+  - cardiomyopathy_entity
   - ecg_test_entity
-  - ask_impact_entity
+  - stress_test_entity
+  - echocardiogram_entity
+  - how_are_you_entity
+  - heart_disease_symptoms_entity
+  - coronary_artery_disease_entity
+  - blood_pressure_entity
+  - heart_attack_entity
+  - heart_attack_symptoms_entity
+  - heart_attack_action_entity
+  - heart_disease_prevention_entity
+  - heart_disease_treatment_entity
+  - cholesterol_impact_entity
+  - heart_health_foods_entity
+  - exercise_for_heart_health_entity
+  - smoking_impact_entity
+  - arrhythmia_entity
+  - heart_failure_entity
+  - ask_definition_entity
+  - ask_purpose_entity
+  - ask_symptoms_entity
+  - ask_treatment_entity
   - ask_prevention_entity
+  - ask_impact_entity
+  - repeat_advice_entity
 
 slots:
   user_input:
@@ -357,3 +406,21 @@ slots:
     mappings:
       - type: from_entity
         entity: ask_impact_entity
+  
+  pain_level:
+    type: bool
+    mappings:
+      - type: from_entity
+        entity: pain_level_entity
+
+  repeat_advice:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: repeat_advice_entity
+
+  chest_pain_responded:
+    type: bool
+    initial_value: false
+    influence_conversation: false
+    mappings: [] 

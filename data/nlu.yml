@@ -61,9 +61,9 @@ nlu:
       - What is the role of the [heart](heart_function_entity) in the body?
       - How does the [heart](heart_function_entity) function?
       - What does the [heart](heart_function_entity) do?
-      - How does my [hert](heart_function_entity) function?  
-      - What is the [funtion](heart_function_entity) of the [heart](heart_function_entity)?  
-      - What is the [functn](heart_function_entity) of the [hrt](heart_function_entity)?  
+      - How does my [heart](heart_function_entity) function?  
+      - What is the [function](heart_function_entity) of the [heart](heart_function_entity)?  
+      - What is the [function](heart_function_entity) of the [hrt](heart_function_entity)?  
 
   - intent: heart_disease_symptoms
     examples: |
@@ -72,10 +72,10 @@ nlu:
       - How can I tell if I have [heart disease](heart_disease_symptoms_entity)?
       - What should I look out for in terms of [heart disease](heart_disease_symptoms_entity)?
       - What are the signs of [heart disease](heart_disease_symptoms_entity)?
-      - What are the symptoms of [hert disease](heart_disease_symptoms_entity)?  
-      - How can I tell if I have [hart disease](heart_disease_symptoms_entity)?  
-      - What are signs of [heart diease](heart_disease_symptoms_entity)?  
-      - What are symptoms of [hert diease](heart_disease_symptoms_entity)?  
+      - What are the symptoms of [heart disease](heart_disease_symptoms_entity)?  
+      - How can I tell if I have [heart disease](heart_disease_symptoms_entity)?  
+      - What are signs of [heart disease](heart_disease_symptoms_entity)?  
+      - What are symptoms of [heart disease](heart_disease_symptoms_entity)?  
 
   - intent: coronary_artery_disease
     examples: |
@@ -84,9 +84,9 @@ nlu:
       - Can you explain [coronary artery disease](coronary_artery_disease_entity)?
       - What happens in [coronary artery disease](coronary_artery_disease_entity)?
       - What is blocked [coronary artery disease](coronary_artery_disease_entity)?
-      - What is [coronary artiry disease](coronary_artery_disease_entity)?
-      - What is [coronary artary disease](coronary_artery_disease_entity)?  
-      - What is [coronary artary disese](coronary_artery_disease_entity)?  
+      - What is [coronary artery disease](coronary_artery_disease_entity)?
+      - What is [coronary artery disease](coronary_artery_disease_entity)?  
+      - What is [coronary artery disease](coronary_artery_disease_entity)?  
 
   - intent: ecg_test
     examples: |
@@ -103,10 +103,10 @@ nlu:
       - How does [blood pressure](blood_pressure_entity) work?
       - What are normal [blood pressure](blood_pressure_entity) levels?
       - What does [blood pressure](blood_pressure_entity) mean?
-      - What is [blod pressure](blood_pressure_entity)?  
-      - What is [bloood pressure](blood_pressure_entity)?  
-      - What is [blood presssure](blood_pressure_entity)?
-      - What is [bloop pressure](blood_pressure_entity)?  
+      - What is [blood pressure](blood_pressure_entity)?  
+      - What is [blood pressure](blood_pressure_entity)?  
+      - What is [blood pressure](blood_pressure_entity)?
+      - What is [blood pressure](blood_pressure_entity)?  
 
   - intent: heart_attack
     examples: |
@@ -136,7 +136,7 @@ nlu:
       - Should I chew aspirin if I suspect a [heart attack](heart_attack_action_entity)?
       - What steps should I take in case of a [heart attack](heart_attack_action_entity)?
       - What should I do if I suspect a [hart attack](heart_attack_action_entity)?  
-      - Should I chew [asprin](heart_attack_action_entity) if I suspect a [heart attack](heart_attack_action_entity)?  
+      - Should I chew [aspirin](heart_attack_action_entity) if I suspect a [heart attack](heart_attack_action_entity)?  
 
   - intent: heart_disease_prevention
     examples: |
@@ -156,7 +156,7 @@ nlu:
       - How can [heart disease](heart_disease_treatment_entity) be managed?
       - What treatments exist for [heart disease](heart_disease_treatment_entity)?
       - What treatments exist for [hrt disease](heart_disease_treatment_entity)?  
-      - How is [hert disease](heart_disease_treatment_entity) treated?  
+      - How is [heart disease](heart_disease_treatment_entity) treated?  
 
   - intent: cholesterol_impact
     examples: |
@@ -165,10 +165,10 @@ nlu:
       - Can high [cholesterol](cholesterol_impact_entity) lead to heart disease?
       - How does [cholesterol](cholesterol_impact_entity) impact heart health?
       - What can be done to control [cholesterol](cholesterol_impact_entity) for heart health?
-      - How does [cholestrol](cholesterol_impact_entity) affect the heart?
-      - What is the role of [cholestrol](cholesterol_impact_entity) in heart disease?  
-      - Can high [cholestrol](cholesterol_impact_entity) lead to heart disease?  
-      - How does [cholestrol](cholesterol_impact_entity) impact heart health?  
+      - How does [cholesterol](cholesterol_impact_entity) affect the heart?
+      - What is the role of [cholesterol](cholesterol_impact_entity) in heart disease?  
+      - Can high [cholesterol](cholesterol_impact_entity) lead to heart disease?  
+      - How does [cholesterol](cholesterol_impact_entity) impact heart health?  
 
   - intent: heart_health_foods
     examples: |
@@ -179,7 +179,7 @@ nlu:
       - Can I reverse heart disease through diet?
       - What foods are good for [hart health](heart_health_foods_entity)?  
       - Can diet improve [hrt health](heart_health_foods_entity)?  
-      - What are the best foods for preventing [hert disease](heart_health_foods_entity)? 
+      - What are the best foods for preventing [heart disease](heart_health_foods_entity)?
 
   - intent: exercise_for_heart_health
     examples: |
@@ -188,9 +188,9 @@ nlu:
       - How much [exercise](exercise_for_heart_health_entity) should I do to maintain a healthy heart?
       - Is [cardio](exercise_for_heart_health_entity) good for heart health?
       - Can [exercise](exercise_for_heart_health_entity) prevent heart disease?
-      - How does [exrcise](exercise_for_heart_health_entity) help the heart?  
-      - What kind of [excersize](exercise_for_heart_health_entity) is best for heart health?  
-      - Can [exercise](exercise_for_heart_health_entity) prvent heart disease? 
+      - How does [exercise](exercise_for_heart_health_entity) help the heart?  
+      - What kind of [exercise](exercise_for_heart_health_entity) is best for heart health?  
+      - Can [exercise](exercise_for_heart_health_entity) prevent heart disease? 
 
   - intent: smoking_impact
     examples: |
@@ -199,9 +199,9 @@ nlu:
       - What are the risks of [smoking](smoking_impact_entity) for heart health?
       - Is [smoking](smoking_impact_entity) related to heart attacks?
       - How does [smoking](smoking_impact_entity) increase the risk of cardiovascular problems?
-      - How does [smking](smoking_impact_entity) affect the heart?  
-      - Can [smking](smoking_impact_entity) cause heart disease?  
-      - What are the [rsiks](smoking_impact_entity) of smoking for heart health?
+      - How does [smoking](smoking_impact_entity) affect the heart?  
+      - Can [smoking](smoking_impact_entity) cause heart disease?  
+      - What are the [risks](smoking_impact_entity) of smoking for heart health?
 
   - intent: arrhythmia
     examples: |
@@ -210,8 +210,8 @@ nlu:
       - What causes [arrhythmia](arrhythmia_entity)?
       - How is [arrhythmia](arrhythmia_entity) treated?
       - What are the symptoms of [arrhythmia](arrhythmia_entity)?
-      - What is [arrthymia](arrhythmia_entity)?  
-      - What are the [symtoms](arrhythmia_entity) of arrhythmia?
+      - What is [arrhythmia](arrhythmia_entity)?  
+      - What are the [symptoms](arrhythmia_entity) of arrhythmia?
 
   - intent: heart_failure
     examples: |
@@ -220,8 +220,8 @@ nlu:
       - What causes [heart failure](heart_failure_entity)?
       - How is [heart failure](heart_failure_entity) treated?
       - What are the symptoms of [heart failure](heart_failure_entity)?
-      - What is [heart failuer](heart_failure_entity)?  
-      - How is [hert failure](heart_failure_entity) treated?
+      - What is [heart failure](heart_failure_entity)?  
+      - How is [heart failure](heart_failure_entity) treated?
 
   - intent: cardiomyopathy
     examples: |
@@ -230,8 +230,8 @@ nlu:
       - What are the types of [cardiomyopathy](cardiomyopathy_entity)?
       - How is [cardiomyopathy](cardiomyopathy_entity) treated?
       - What causes [cardiomyopathy](cardiomyopathy_entity)?
-      - What is [cardimyopathy](cardiomyopathy_entity)?  
-      - How is [cardimyopathy](cardiomyopathy_entity) treated?
+      - What is [cardiomyopathy](cardiomyopathy_entity)?  
+      - How is [cardiomyopathy](cardiomyopathy_entity) treated?
 
   - intent: echocardiogram
     examples: |
@@ -240,7 +240,7 @@ nlu:
       - What does an [echocardiogram](echocardiogram_entity) show?
       - Why is an [echocardiogram](echocardiogram_entity) done?
       - Can an [echocardiogram](echocardiogram_entity) diagnose heart disease?
-      - What is an [echocadiogram](echocardiogram_entity)?  
+      - What is an [echocardiogram](echocardiogram_entity)?  
       - How is an [echocardiogram](echocardiogram_entity) preformed?
 
   - intent: stress_test
@@ -250,7 +250,7 @@ nlu:
       - How is a [stress test](stress_test_entity) performed?
       - What does a [stress test](stress_test_entity) show?
       - How does a [stress test](stress_test_entity) help in diagnosing heart disease?
-      - What is a [stess test](stress_test_entity)?  
+      - What is a [stress test](stress_test_entity)?  
       - How is a [stress test](stress_test_entity) preformed?  
 
   - intent: ask_definition
@@ -308,3 +308,26 @@ nlu:
       - How is heart disease diagnosed?
       - Are there any tests to check heart health?
       - What diagnostic procedures are used to detect heart disease?
+
+  - intent: pain_level
+    examples: |
+      - I am having pain in my [chest](pain_level_entity), what should I do?
+      - I feel pain in my [heart](pain_level_entity), what should I do?
+      - My [chest](pain_level_entity) hurts, what can I do about it?
+      - I feel a sharp pain in my [chest](pain_level_entity), what should I do?
+      - I have pain in my [left side of the chest](pain_level_entity), what should I do?
+      - What should I do if I have any kind of pain in my [heart](pain_level_entity)?
+      - I'm experiencing pain in my [heart](pain_level_entity)
+      - I feel discomfort in my [chest](pain_level_entity)
+      - Pain in my [chest](pain_level_entity), what action should I take?
+      - I feel pain in my [heart](pain_level_entity), should I worry?
+      - I have a sharp [chest pain](pain_level_entity), what do I do?
+
+  - intent: repeat_advice
+    examples: |
+      - What shall I do?
+      - What should I do now?
+      - Can you tell me what to do?
+      - I asked what to do.
+      - What do you suggest I do?
+      - What shall I do next?

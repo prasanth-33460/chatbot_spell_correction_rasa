@@ -17,7 +17,7 @@ stories:
       - action: action_understand_spelling
       - intent: heart_function
       - action: utter_heart_function
-
+  
   - story: Heart disease symptoms query
     steps:
       - action: action_understand_spelling
@@ -187,3 +187,14 @@ stories:
       - action: action_understand_spelling
       - intent: diagnostic_tests
       - action: utter_diagnostic_tests
+
+  - story: User mentions chest pain and asks what to do
+    steps:
+      - intent: pain_level
+        entities:
+          - pain_level_entity: "chest"
+      - action: utter_pain_level
+      - slot_was_set:
+          - chest_pain_responded: true
+      - intent: ask_what_to_do
+      - action: utter_follow_up_action  
