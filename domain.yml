@@ -32,6 +32,7 @@ intents:
   - ask_prevention
   - ask_impact
   - diagnostic_tests
+  - how_are_you
 
 responses:
   utter_greet:
@@ -40,6 +41,9 @@ responses:
   utter_goodbye:
     - text: "Goodbye! Take care!"
     - text: "Bye! Have a great day!"
+
+  utter_how_are_you:
+    - text: "I am doing good. and you?"
 
   utter_fallback:
     - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
@@ -158,6 +162,7 @@ actions:
   - utter_ask_purpose
   - utter_ask_definition
   - action_understand_spelling
+  - utter_how_are_you
 
 entities:
   - user_input
@@ -186,7 +191,10 @@ entities:
   - ask_treatment
   - ask_prevention
   - ask_impact
-  - diagnostic_tests
+  - how_are_you
+  - ecg_test_entity
+  - ask_impact_entity
+  - ask_prevention_entity
 
 slots:
   user_input:
@@ -199,6 +207,30 @@ slots:
     mappings:
     - type: from_entity
       entity: heart_function_entity
+  
+  cardiomyopathy:
+    type: text
+    mappings: 
+    - type: from_entity
+      entity: cardiomyopathy_entity
+  
+  echocardiogram: 
+    type: text
+    mappings:
+    - type: from_entity
+      entity: echocardiogram_entity
+
+  stress_test: 
+    type: text
+    mappings:
+    - type: from_entity
+      entity: stress_test_entity
+  
+  how_are_you:
+    type: text 
+    mappings: 
+      - type: from_entity
+        entity: how_are_you_entity
   
   heart_disease_symptoms:
     type: text
@@ -289,3 +321,39 @@ slots:
     mappings:
       - type: from_entity
         entity: heart_failure_entity
+
+  ask_definition:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ask_definition_entity
+
+  ask_purpose:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ask_purpose_entity
+
+  ask_symptoms:
+    type: text
+    mappings: 
+      - type: from_entity
+        entity: ask_symptoms_entity
+  
+  ask_treatment: 
+    type: text
+    mappings: 
+      - type: from_entity
+        entity: ask_treatment_entity
+
+  ask_prevention: 
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ask_prevention_entity
+
+  ask_impact:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ask_impact_entity

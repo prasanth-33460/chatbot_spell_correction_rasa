@@ -41,6 +41,11 @@ stories:
       - intent: affirm
       - action: utter_affirmation
 
+  - story: how_are_you response
+    steps:
+      - intent: how_are_you
+      - action: utter_how_are_you 
+
   - story: Deny response
     steps:
       - intent: deny

@@ -67,6 +67,12 @@ rules:
       - intent: heart_disease_treatment
       - action: utter_heart_disease_treatment
 
+  - rule: Respond to how are you query
+    steps:
+      - action: action_understand_spelling
+      - intent: how_are_you
+      - action: utter_how_are_you
+
   - rule: Respond to cholesterol impact query
     steps:
       - action: action_understand_spelling

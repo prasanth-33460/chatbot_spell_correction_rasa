@@ -29,6 +29,15 @@ nlu:
       - That's correct
       - Go ahead
 
+  - intent: how_are_you
+    examples: |
+      - How are you?
+      - How is [life](how_are_you_entity)?
+      - How [you](how_are_you_entity) doing?
+      - How have [you](how_are_you_entity) been?
+      - How is [life](how_are_you_entity) been lately?
+
+
   - intent: deny
     examples: |
       - No
@@ -47,250 +56,250 @@ nlu:
 
   - intent: heart_function
     examples: |
-      - What is the function of the heart?
-      - Can you tell me what the heart does?
-      - What is the role of the heart in the body?
-      - How does the heart function?
-      - What does the heart do?
-      - How does my hert function?  # Misspelling of heart
-      - What is the funtion of the heart?  # Misspelling of function
-      - What is the functn of the hrt?  # Misspellings of function and heart
+      - What is the function of the [heart](heart_function_entity)?
+      - Can you tell me what the [heart](heart_function_entity) does?
+      - What is the role of the [heart](heart_function_entity) in the body?
+      - How does the [heart](heart_function_entity) function?
+      - What does the [heart](heart_function_entity) do?
+      - How does my [hert](heart_function_entity) function?  
+      - What is the [funtion](heart_function_entity) of the [heart](heart_function_entity)?  
+      - What is the [functn](heart_function_entity) of the [hrt](heart_function_entity)?  
 
   - intent: heart_disease_symptoms
     examples: |
-      - What are the symptoms of heart disease?
-      - What are common symptoms of heart disease?
-      - How can I tell if I have heart disease?
-      - What should I look out for in terms of heart disease?
-      - What are the signs of heart disease?
-      - What are the symptoms of hert disease?  # Misspelling of heart
-      - How can I tell if I have hart disease?  # Misspelling of heart
-      - What are signs of heart diease?  # Misspelling of disease
-      - What are symptoms of hert diease?  # Misspelling of heart and disease
+      - What are the symptoms of [heart disease](heart_disease_symptoms_entity)?
+      - What are common symptoms of [heart disease](heart_disease_symptoms_entity)?
+      - How can I tell if I have [heart disease](heart_disease_symptoms_entity)?
+      - What should I look out for in terms of [heart disease](heart_disease_symptoms_entity)?
+      - What are the signs of [heart disease](heart_disease_symptoms_entity)?
+      - What are the symptoms of [hert disease](heart_disease_symptoms_entity)?  
+      - How can I tell if I have [hart disease](heart_disease_symptoms_entity)?  
+      - What are signs of [heart diease](heart_disease_symptoms_entity)?  
+      - What are symptoms of [hert diease](heart_disease_symptoms_entity)?  
 
   - intent: coronary_artery_disease
     examples: |
-      - What is coronary artery disease?
-      - What is CAD?
-      - Can you explain coronary artery disease?
-      - What happens in coronary artery disease?
-      - What is blocked coronary artery disease?
-      - What is coronary artiry disease?  # Misspelling of artery
-      - What is coronary artary disease?  # Misspelling of artery
-      - What is coronary artary disese?  # Misspelling of artery and disease
+      - What is [coronary artery disease](coronary_artery_disease_entity)?
+      - What is [CAD](coronary_artery_disease_entity)?
+      - Can you explain [coronary artery disease](coronary_artery_disease_entity)?
+      - What happens in [coronary artery disease](coronary_artery_disease_entity)?
+      - What is blocked [coronary artery disease](coronary_artery_disease_entity)?
+      - What is [coronary artiry disease](coronary_artery_disease_entity)?
+      - What is [coronary artary disease](coronary_artery_disease_entity)?  
+      - What is [coronary artary disese](coronary_artery_disease_entity)?  
 
   - intent: ecg_test
     examples: |
-      - What is an ECG?
-      - Can you explain an ECG?
-      - What does an ECG do?
-      - How is an ECG performed?
-      - What does an electrocardiogram show?
+      - What is an [ECG](ecg_test_entity)?
+      - Can you explain an [ECG](ecg_test_entity)?
+      - What does an [ECG](ecg_test_entity) do?
+      - How is an [ECG](ecg_test_entity) performed?
+      - What does an [electrocardiogram](ecg_test_entity) show?
 
   - intent: blood_pressure
     examples: |
-      - What is blood pressure?
-      - Can you explain blood pressure?
-      - How does blood pressure work?
-      - What are normal blood pressure levels?
-      - What does blood pressure mean?
-      - What is blod pressure?  # Misspelling of blood
-      - What is bloood pressure?  # Misspelling of blood
-      - What is blood presssure?  # Misspelling of pressure
-      - What is bloop pressure?  # Misspelling of blood pressure
+      - What is [blood pressure](blood_pressure_entity)?
+      - Can you explain [blood pressure](blood_pressure_entity)?
+      - How does [blood pressure](blood_pressure_entity) work?
+      - What are normal [blood pressure](blood_pressure_entity) levels?
+      - What does [blood pressure](blood_pressure_entity) mean?
+      - What is [blod pressure](blood_pressure_entity)?  
+      - What is [bloood pressure](blood_pressure_entity)?  
+      - What is [blood presssure](blood_pressure_entity)?
+      - What is [bloop pressure](blood_pressure_entity)?  
 
   - intent: heart_attack
     examples: |
-      - What is a heart attack?
-      - Can you explain a heart attack?
-      - What happens during a heart attack?
-      - How does a heart attack occur?
-      - What causes a heart attack?
-      - What happens during a hart attack?  # Misspelling of heart
-      - What is a hart attack?  # Misspelling of heart
+      - What is a [heart attack](heart_attack_action_entity)?
+      - Can you explain a [heart attack](heart_attack_action_entity)?
+      - What happens during a [heart attack](heart_attack_action_entity)?
+      - How does a [heart attack](heart_attack_action_entity) occur?
+      - What causes a [heart attack](heart_attack_action_entity)?
+      - What happens during a [hart attack](heart_attack_action_entity)?  
+      - What is a [hart attack](heart_attack_action_entity)?  
 
   - intent: heart_attack_symptoms
     examples: |
-      - What are the symptoms of a heart attack?
-      - How do I know if I’m having a heart attack?
-      - What should I feel during a heart attack?
-      - What are the warning signs of a heart attack?
-      - How do heart attack symptoms manifest?
-      - What are the signs of a hrt attack?  # Misspelling of heart
-      - What should I feel during a hart attack?  # Misspelling of heart
+      - What are the symptoms of a [heart attack](heart_attack_symptoms_entity)?
+      - How do I know if I’m having a [heart attack](heart_attack_symptoms_entity)?
+      - What should I feel during a [heart attack](heart_attack_symptoms_entity)?
+      - What are the warning signs of a [heart attack](heart_attack_symptoms_entity)?
+      - How do [heart attack](heart_attack_symptoms_entity) symptoms manifest?
+      - What are the signs of a [hrt attack](heart_attack_symptoms_entity)?  
+      - What should I feel during a [hart attack](heart_attack_symptoms_entity)?  
 
   - intent: heart_attack_action
     examples: |
-      - What should I do if I suspect a heart attack?
-      - What action should I take if I think I'm having a heart attack?
-      - How do I react to a possible heart attack?
-      - Should I chew aspirin if I suspect a heart attack?
-      - What steps should I take in case of a heart attack?
-      - What should I do if I suspect a hart attack?  # Misspelling of heart
-      - Should I chew asprin if I suspect a heart attack?  # Misspelling of aspirin
+      - What should I do if I suspect a [heart attack](heart_attack_action_entity)?
+      - What action should I take if I think I'm having a [heart attack](heart_attack_action_entity)?
+      - How do I react to a possible [heart attack](heart_attack_action_entity)?
+      - Should I chew aspirin if I suspect a [heart attack](heart_attack_action_entity)?
+      - What steps should I take in case of a [heart attack](heart_attack_action_entity)?
+      - What should I do if I suspect a [hart attack](heart_attack_action_entity)?  
+      - Should I chew [asprin](heart_attack_action_entity) if I suspect a [heart attack](heart_attack_action_entity)?  
 
   - intent: heart_disease_prevention
     examples: |
-      - How can heart disease be prevented?
-      - What are ways to prevent heart disease?
-      - How do I avoid heart disease?
-      - What steps should I take to prevent heart disease?
-      - What are the best prevention methods for heart disease?
-      - What are ways to prevent hrt disease?  # Misspelling of heart
-      - How do I avoid hrt disease?  # Misspelling of heart
+      - How can [heart disease](heart_disease_prevention_entity) be prevented?
+      - What are ways to prevent [heart disease](heart_disease_prevention_entity)?
+      - How do I avoid [heart disease](heart_disease_prevention_entity)?
+      - What steps should I take to prevent [heart disease](heart_disease_prevention_entity)?
+      - What are the best prevention methods for [heart disease](heart_disease_prevention_entity)?
+      - What are ways to prevent [hrt disease](heart_disease_prevention_entity)?  
+      - How do I avoid [hrt disease](heart_disease_prevention_entity)? 
 
   - intent: heart_disease_treatment
     examples: |
-      - What are common treatments for heart disease?
-      - How is heart disease treated?
-      - What is the treatment for heart disease?
-      - How can heart disease be managed?
-      - What treatments exist for heart disease?
-      - What treatments exist for hrt disease?  # Misspelling of heart
-      - How is hert disease treated?  # Misspelling of heart
+      - What are common treatments for [heart disease](heart_disease_treatment_entity)?
+      - How is [heart disease](heart_disease_treatment_entity) treated?
+      - What is the treatment for [heart disease](heart_disease_treatment_entity)?
+      - How can [heart disease](heart_disease_treatment_entity) be managed?
+      - What treatments exist for [heart disease](heart_disease_treatment_entity)?
+      - What treatments exist for [hrt disease](heart_disease_treatment_entity)?  
+      - How is [hert disease](heart_disease_treatment_entity) treated?  
 
   - intent: cholesterol_impact
     examples: |
-      - How does cholesterol affect the heart?
-      - What is the role of cholesterol in heart disease?
-      - Can high cholesterol lead to heart disease?
-      - How does cholesterol impact heart health?
-      - What can be done to control cholesterol for heart health?
-      - How does cholestrol affect the heart?  # Misspelling of cholesterol
-      - What is the role of cholestrol in heart disease?  # Misspelling of cholesterol
-      - Can high cholestrol lead to heart disease?  # Misspelling of cholesterol
-      - How does cholestrol impact heart health?  # Misspelling of cholesterol
+      - How does [cholesterol](cholesterol_impact_entity) affect the heart?
+      - What is the role of [cholesterol](cholesterol_impact_entity) in heart disease?
+      - Can high [cholesterol](cholesterol_impact_entity) lead to heart disease?
+      - How does [cholesterol](cholesterol_impact_entity) impact heart health?
+      - What can be done to control [cholesterol](cholesterol_impact_entity) for heart health?
+      - How does [cholestrol](cholesterol_impact_entity) affect the heart?
+      - What is the role of [cholestrol](cholesterol_impact_entity) in heart disease?  
+      - Can high [cholestrol](cholesterol_impact_entity) lead to heart disease?  
+      - How does [cholestrol](cholesterol_impact_entity) impact heart health?  
 
   - intent: heart_health_foods
     examples: |
-      - What foods are good for heart health?
-      - Can diet improve heart health?
+      - What foods are good for [heart health](heart_health_foods_entity)?
+      - Can diet improve [heart health](heart_health_foods_entity)?
       - What should I eat for a healthy heart?
       - What are the best foods for preventing heart disease?
       - Can I reverse heart disease through diet?
-      - What foods are good for hart health?  # Misspelling of heart
-      - Can diet improve hrt health?  # Misspelling of heart
-      - What are the best foods for preventing hert disease?  # Misspelling of heart
+      - What foods are good for [hart health](heart_health_foods_entity)?  
+      - Can diet improve [hrt health](heart_health_foods_entity)?  
+      - What are the best foods for preventing [hert disease](heart_health_foods_entity)? 
 
   - intent: exercise_for_heart_health
     examples: |
-      - How does exercise help the heart?
-      - What kind of exercise is best for heart health?
-      - How much exercise should I do to maintain a healthy heart?
-      - Is cardio good for heart health?
-      - Can exercise prevent heart disease?
-      - How does exrcise help the heart?  # Misspelling of exercise
-      - What kind of excersize is best for heart health?  # Misspelling of exercise
-      - Can exercise prvent heart disease?  # Misspelling of prevent
+      - How does [exercise](exercise_for_heart_health_entity) help the heart?
+      - What kind of [exercise](exercise_for_heart_health_entity) is best for heart health?
+      - How much [exercise](exercise_for_heart_health_entity) should I do to maintain a healthy heart?
+      - Is [cardio](exercise_for_heart_health_entity) good for heart health?
+      - Can [exercise](exercise_for_heart_health_entity) prevent heart disease?
+      - How does [exrcise](exercise_for_heart_health_entity) help the heart?  
+      - What kind of [excersize](exercise_for_heart_health_entity) is best for heart health?  
+      - Can [exercise](exercise_for_heart_health_entity) prvent heart disease? 
 
   - intent: smoking_impact
     examples: |
-      - How does smoking affect the heart?
-      - Can smoking cause heart disease?
-      - What are the risks of smoking for heart health?
-      - Is smoking related to heart attacks?
-      - How does smoking increase the risk of cardiovascular problems?
-      - How does smking affect the heart?  # Misspelling of smoking
-      - Can smking cause heart disease?  # Misspelling of smoking
-      - What are the rsiks of smoking for heart health?  # Misspelling of risks
+      - How does [smoking](smoking_impact_entity) affect the heart?
+      - Can [smoking](smoking_impact_entity) cause heart disease?
+      - What are the risks of [smoking](smoking_impact_entity) for heart health?
+      - Is [smoking](smoking_impact_entity) related to heart attacks?
+      - How does [smoking](smoking_impact_entity) increase the risk of cardiovascular problems?
+      - How does [smking](smoking_impact_entity) affect the heart?  
+      - Can [smking](smoking_impact_entity) cause heart disease?  
+      - What are the [rsiks](smoking_impact_entity) of smoking for heart health?
 
   - intent: arrhythmia
     examples: |
-      - What is arrhythmia?
-      - Can you explain arrhythmia?
-      - What causes arrhythmia?
-      - How is arrhythmia treated?
-      - What are the symptoms of arrhythmia?
-      - What is arrthymia?  # Misspelling of arrhythmia
-      - What are the symtoms of arrhythmia?  # Misspelling of symptoms
+      - What is [arrhythmia](arrhythmia_entity)?
+      - Can you explain [arrhythmia](arrhythmia_entity)?
+      - What causes [arrhythmia](arrhythmia_entity)?
+      - How is [arrhythmia](arrhythmia_entity) treated?
+      - What are the symptoms of [arrhythmia](arrhythmia_entity)?
+      - What is [arrthymia](arrhythmia_entity)?  
+      - What are the [symtoms](arrhythmia_entity) of arrhythmia?
 
   - intent: heart_failure
     examples: |
-      - What is heart failure?
-      - Can you explain heart failure?
-      - What causes heart failure?
-      - How is heart failure treated?
-      - What are the symptoms of heart failure?
-      - What is heart failuer?  # Misspelling of failure
-      - How is hert failure treated?  # Misspelling of heart
+      - What is [heart failure](heart_failure_entity)?
+      - Can you explain [heart failure](heart_failure_entity)?
+      - What causes [heart failure](heart_failure_entity)?
+      - How is [heart failure](heart_failure_entity) treated?
+      - What are the symptoms of [heart failure](heart_failure_entity)?
+      - What is [heart failuer](heart_failure_entity)?  
+      - How is [hert failure](heart_failure_entity) treated?
 
   - intent: cardiomyopathy
     examples: |
-      - What is cardiomyopathy?
-      - Can you explain cardiomyopathy?
-      - What are the types of cardiomyopathy?
-      - How is cardiomyopathy treated?
-      - What causes cardiomyopathy?
-      - What is cardimyopathy?  # Misspelling of cardiomyopathy
-      - How is cardimyopathy treated?  # Misspelling of cardiomyopathy
+      - What is [cardiomyopathy](cardiomyopathy_entity)?
+      - Can you explain [cardiomyopathy](cardiomyopathy_entity)?
+      - What are the types of [cardiomyopathy](cardiomyopathy_entity)?
+      - How is [cardiomyopathy](cardiomyopathy_entity) treated?
+      - What causes [cardiomyopathy](cardiomyopathy_entity)?
+      - What is [cardimyopathy](cardiomyopathy_entity)?  
+      - How is [cardimyopathy](cardiomyopathy_entity) treated?
 
   - intent: echocardiogram
     examples: |
-      - What is an echocardiogram?
-      - How is an echocardiogram performed?
-      - What does an echocardiogram show?
-      - Why is an echocardiogram done?
-      - Can an echocardiogram diagnose heart disease?
-      - What is an echocadiogram?  # Misspelling of echocardiogram
-      - How is an echocardiogram preformed?  # Misspelling of performed
+      - What is an [echocardiogram](echocardiogram_entity)?
+      - How is an [echocardiogram](echocardiogram_entity) performed?
+      - What does an [echocardiogram](echocardiogram_entity) show?
+      - Why is an [echocardiogram](echocardiogram_entity) done?
+      - Can an [echocardiogram](echocardiogram_entity) diagnose heart disease?
+      - What is an [echocadiogram](echocardiogram_entity)?  
+      - How is an [echocardiogram](echocardiogram_entity) preformed?
 
   - intent: stress_test
     examples: |
-      - What is a stress test?
-      - Why would I need a stress test?
-      - How is a stress test performed?
-      - What does a stress test show?
-      - How does a stress test help in diagnosing heart disease?
-      - What is a stess test?  # Misspelling of stress
-      - How is a stress test preformed?  # Misspelling of performed
+      - What is a [stress test](stress_test_entity)?
+      - Why would I need a [stress test](stress_test_entity)?
+      - How is a [stress test](stress_test_entity) performed?
+      - What does a [stress test](stress_test_entity) show?
+      - How does a [stress test](stress_test_entity) help in diagnosing heart disease?
+      - What is a [stess test](stress_test_entity)?  
+      - How is a [stress test](stress_test_entity) preformed?  
 
   - intent: ask_definition
     examples: |
-      - What does [term] mean?
-      - Can you define [term]?
-      - What is the definition of [term]?
-      - How would you describe [term]?
-      - Can you explain what [term] means?
+      - What does [term](ask_definition_entity) mean?
+      - Can you define [term](ask_definition_entity)?
+      - What is the definition of [term](ask_definition_entity)?
+      - How would you describe [term](ask_definition_entity)?
+      - Can you explain what [term](ask_definition_entity) means?
 
   - intent: ask_purpose
     examples: |
-      - What is the purpose of [test/procedure]?
-      - Why should I undergo [test/procedure]?
+      - What is the purpose of [test/procedure](ask_purpose_entity)?
+      - Why should I undergo [test/procedure](ask_purpose_entity)?
       - What is the purpose of this treatment?
       - Why do I need to take this medication?
       - How will this procedure help me?
 
   - intent: ask_symptoms
     examples: |
-      - What are the symptoms of [disease]?
-      - How do I know if I have [disease]?
-      - What should I look for in terms of symptoms of [disease]?
-      - What are the signs of [disease]?
-      - How do [disease] symptoms manifest?
+      - What are the symptoms of [disease](ask_symptoms_entity)?
+      - How do I know if I have [disease](ask_symptoms_entity)?
+      - What should I look for in terms of symptoms of [disease](ask_symptoms_entity)?
+      - What are the signs of [disease](ask_symptoms_entity)?
+      - How do [disease](ask_symptoms_entity) symptoms manifest?
 
   - intent: ask_treatment
     examples: |
-      - How is [condition] treated?
-      - What treatments are available for [condition]?
-      - What options do I have for treating [condition]?
-      - Is there a cure for [condition]?
-      - Can [condition] be managed with medication?
+      - How is [condition](ask_treatment_entity) treated?
+      - What treatments are available for [condition](ask_treatment_entity)?
+      - What options do I have for treating [condition](ask_treatment_entity)?
+      - Is there a cure for [condition](ask_treatment_entity)?
+      - Can [condition](ask_treatment_entity) be managed with medication?
 
   - intent: ask_prevention
     examples: |
-      - How can I prevent [condition]?
-      - What steps can I take to avoid [condition]?
-      - What are the prevention methods for [condition]?
-      - How can I lower my risk of [condition]?
-      - What can I do to prevent [condition]?
+      - How can I prevent [condition](ask_prevention_entity)?
+      - What steps can I take to avoid [condition](ask_prevention_entity)?
+      - What are the prevention methods for [condition](ask_prevention_entity)?
+      - How can I lower my risk of [condition](ask_prevention_entity)?
+      - What can I do to prevent [condition](ask_prevention_entity)?
 
   - intent: ask_impact
     examples: |
-      - How does [factor] affect heart health?
-      - What is the impact of [factor] on heart disease?
-      - How does [condition] affect the heart?
-      - Can [factor] increase my risk of heart disease?
-      - What impact does [lifestyle factor] have on the heart?
+      - How does [factor](ask_impact_entity) affect heart health?
+      - What is the impact of [factor](ask_impact_entity) on heart disease?
+      - How does [condition](ask_impact_entity) affect the heart?
+      - Can [factor](ask_impact_entity) increase my risk of heart disease?
+      - What impact does [lifestyle factor](ask_impact_entity) have on the heart?
 
   - intent: diagnostic_tests
     examples: |
@@ -299,8 +308,3 @@ nlu:
       - How is heart disease diagnosed?
       - Are there any tests to check heart health?
       - What diagnostic procedures are used to detect heart disease?
-      - What diagnostic tets are available for heart disease?  # Misspelling of tests
-      - What tests can help diagose heart disease?  # Misspelling of diagnose
-      - How is heart disese diagnosed?  # Misspelling of disease
-      - Are there any test to check heart helath?  # Misspellings of tests and health
-      - What diagnosic procedures are used to detect heart disease?  # Misspelling of diagnostic
